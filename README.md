@@ -17,6 +17,9 @@ Main program includes some header files which are used to define various functio
 in added function libraries.              
 </p>
 
+<details><summary><b>Imported Libraries</b></summary>
+
+
 ### <b> #include <stdio.h> </b>
 This is a standard library in C language. Provides standard functions to manipulate
 the inputs and outputs of the file (35 basic functions).
@@ -48,6 +51,10 @@ or part of a CRT screen)
 ### <b>#include <math.h></b>
 Basic mathematical operations are implemented in this library. As a standard library
 it provides specific functions and mathematical constants as well.
+
+</details>
+
+<details><summary><b>Functions Overview</b></summary>
 
 Preprocessor directives define constant variables with values that can be found and
 interpreted later in the code. An example from the source file is following:
@@ -98,13 +105,17 @@ a variable *all_steps is given back.
 
 <b>step_pitch</b> – this is again analogical function for a second axis.
 
+</details>
+    
+    
 Main function contains graphical menu shown in the console and is made with help
 of ncurses library. It includes all described functions above. Infinity loop catches all
 pressed arrow keys and invokes function from a case instruction.
 
+<details><summary><b>Main function</b></summary>
 
-## <b>Main function</b>
-```C++
+
+```C
 
 int main()
 {
@@ -199,10 +210,11 @@ int main()
 }
 ```
 </br>
-
+</details>
+    
 #  Hardware
 
-### <b> 1. Stepper motors</b>
+### <b> Stepper motors</b>
 
 In this project 8 nema stepper motors were used with step angle equal to 1.8 deg. It
 has 4 wires, each phase draws 0.3A at 12.0V, with holding torque 3Nm.
@@ -220,7 +232,7 @@ has 4 wires, each phase draws 0.3A at 12.0V, with holding torque 3Nm.
 
 </br>
 <p align="center">
-  <img width="460" height="300" src="img/wiring.png">
+  <img width="650" height="300" src="img/wiring.png">
 </p></br>
 
 <span style="text-align:justify">
@@ -375,6 +387,8 @@ then to provide power directly to the board.
 
 I divided the PCB design into three different parts and then interconnected them using KiCad software.
 
+<details><summary><b>PCB Design</b></summary>
+
 </br>
 <p align="center">
   <img  src="img/gim1.png">
@@ -389,3 +403,5 @@ I divided the PCB design into three different parts and then interconnected them
 <p align="center">
   <img  src="img/gim3.png">
 </p></br>
+
+</details>
